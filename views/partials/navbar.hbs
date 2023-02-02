@@ -1,0 +1,32 @@
+<div class="custom-padding">
+    <nav>
+        <div class="logo">
+            Photo
+        </div>
+        <ul class="menu-area">
+        {{log this}}
+        <li>
+           <div class="wrap">
+              <div class="search">
+                 <input id = "search-text" type="text" class="searchTerm" placeholder="Search...">
+                 <button id = "search-button" type="submit" class="searchButton">Search</button>
+              </div>
+           </div>
+           </li>
+            <li>
+                <a href="/">Home</a>
+            </li>
+              <li>
+                 <a href="/postimage">Post Image</a>
+              </li>
+            <li>
+                {{#if logged}}
+                    <a id="logout-button">Log Out</a>
+                {{else}}
+                    <a href="/login">Log In</a>
+                {{/if}}
+            </li>
+
+        </ul>
+    </nav>
+</div>

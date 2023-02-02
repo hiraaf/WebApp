@@ -1,0 +1,55 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="/public/stylesheets/forms.css">
+
+
+    <title>Registration</title>
+</head>
+
+<body>
+
+<section id="sheet">
+    <div class="container">
+
+        <div class="right-col">
+            <div class="top-card">
+                <p>Register To Post Image</p>
+            </div>
+            <div class="form-container">
+               <form action="/users/register" method = "POST" enctype= "application/x-www-form-urlencoded">
+                   <div class="field-group">
+                       <label for="username"></label>
+                       <input name='username' id="username" type="text" placeholder="Username"  name = "username">
+
+                   </div>
+                   <div class="field-group">
+                       <label for="email"></label>
+                       <input name="email" id="email" value="" type="email" placeholder="Email"  name ="email">
+                   </div>
+                   <div class="field-group">
+                       <label for="password"></label>
+                       <input name="password" id="password" value="" type="password" placeholder="Password"   name = "password">
+                   </div>
+                   <div class="field-group">
+                       <label for="cpassword"></label>
+                       <input name="cpassword" id="cpassword" value="" type="password" placeholder="Confirm Password"   name = "cpassword">
+                   </div>
+
+                   <div class="row">
+                        <label for="checkbox">Check box if you are <span>13+</span></label>
+                        <input name="checkbox" id="checkbox" value="" type="checkbox"  required name = "checkbox">
+                   </div>
+                          <div class="row">
+                          <label for="tos">Check box to agree to the <span>Terms and Services</span></label>
+                          <input name="checkbox" id="checkbox" value="" type="checkbox" required  name = "checkbox">
+                     </div>
+
+
+                    <button type="submit">Register </button>
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+</section>
+</body>

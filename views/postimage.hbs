@@ -1,0 +1,41 @@
+<head>
+        <link rel="stylesheet" type="text/css" href="/public/stylesheets/forms.css">
+    <title>Post Image</title>
+</head>
+
+<body>
+
+<section id="sheet">
+    <div class="container">
+        <div class="right-col">
+            <div class="top-card">
+                <p>Post Image</p>
+            </div>
+            <div class="form-container">
+                <form action="/posts/createPost" method = "POST" enctype = "multipart/form-data">
+                    <div class="field-group">
+                        <label for="title"></label>
+                        <input name='title' id="title" type="text" placeholder="Title" required name = "title">
+                    </div>
+                    <div class="field-group">
+                        <label for="description"></label>
+                        <input name='description' id="description" value="" type="text" placeholder="Description" required name = "description">
+                    </div>
+                    <div class = "uploadImage">
+                        <label for="uploadImage">Post Image</label>
+                         <input type="file" name="uploadImage" id="uploadImage" required name = "uploadImage">
+                    </div>
+
+                    <button type="submit">Post</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+
+</body>
+</html>
